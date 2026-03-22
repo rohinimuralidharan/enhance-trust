@@ -1,173 +1,84 @@
----
-icon: lucide/rocket
----
+# nShield Security World v13.9.3 Security Manual
+## Introduction
+Good security practice requires procedural as well as technical measures to provide a comprehensive security environment for the protection of your cryptographic keys and data.
 
-# Get started
+This guide provides advice to you on the secure operation of the product. It identifies procedural measures that should be deployed to support the secure operation of the nShield. The guidance should be used in the development of your Security Operating Procedures for your systems incorporating the nShield.
 
-For full documentation visit [zensical.org](https://zensical.org/docs/).
+### Who should read this document?
+The guide should be used by the following people:
 
-## Commands
+Those responsible for the security policy and procedures for your systems incorporating the nShield
 
-* [`zensical new`][new] - Create a new project
-* [`zensical serve`][serve] - Start local web server
-* [`zensical build`][build] - Build your site
+Those responsible for commissioning the nShield
 
-  [new]: https://zensical.org/docs/usage/new/
-  [serve]: https://zensical.org/docs/usage/preview/
-  [build]: https://zensical.org/docs/usage/build/
+Those responsible for administering the nShield
 
-## Examples
+Those responsible for auditing the nShield.
 
-### Admonitions
+### Products covered by this manual
+The guide covers the following product variants:
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/)
+nShield Edge
 
-!!! note
+nShield Solo+
 
-    This is a **note** admonition. Use it to provide helpful information.
+nShield Solo XC
 
-!!! warning
+nShield 5s
 
-    This is a **warning** admonition. Be careful!
+nShield Connect+
 
-### Details
+nShield Connect XC
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/#collapsible-blocks)
+nShield 5c
 
-??? info "Click to expand for more info"
+Note: In this manual, guidance given for nShield Solo applies to the Solo+, Solo XC, and nShield 5s product variants. Similarly, guidance given for nShield Connect applies to the Connect+, Connect XC, and nShield 5c product variants.
 
-    This content is hidden until you click to expand it.
-    Great for FAQs or long explanations.
+### Product security objective
+The nShield range of products provide protection against technical and physical attacks on keys used to protect your data in use, in motion and at rest. This provides confidentiality, integrity and availability* of user data up to FIPS 140 Level 3 and Common Criteria version 3.1 revision 5 EAL 4+ (platform and version dependent) when deployed in accordance with the technical and procedural controls identified in the HSM and Security World product documentation and here in the Security Manual.
 
-## Code Blocks
+*Some availability threats can be mitigated by hosting a Security World across multiple Hardware Security Modules (HSMs).
 
-> Go to [documentation](https://zensical.org/docs/authoring/code-blocks/)
+nshield products
 
-``` python hl_lines="2" title="Code blocks"
-def greet(name):
-    print(f"Hello, {name}!") # (1)!
+### Product selection
+As part of the security product selection process, you must determine that the functionality delivered by any candidate product meets your requirements.
 
-greet("Python")
-```
+!!! In this manual the terms module and HSM are both used to generically describe the nShield range of products.
 
-1.  > Go to [documentation](https://zensical.org/docs/authoring/code-blocks/#code-annotations)
+### Security manual authority and scope
+The guide is advisory and its scope is limited to identifying good procedural practices for the secure operation of the product within your environment.
 
-    Code annotations allow to attach notes to lines of code.
+If there is any contradiction between the guidance that occurs in this manual and that found in the HSM and Security World product documentation, then the guidance found here takes precedence.
 
-Code can also be highlighted inline: `#!python print("Hello, Python!")`.
+The scope of this manual is limited to security procedural guidance. The HSM and Security World product documentation provide guidance on how to implement the controls discussed in this Manual.
 
-## Content tabs
+### Related documents
+nShield v13.9.3 Hardware Install and Setup Guides
 
-> Go to [documentation](https://zensical.org/docs/authoring/content-tabs/)
+nShield v13.9.3 HSM User Guide
 
-=== "Python"
+nShield Security World Software v13.9.3 Installation Guide
 
-    ``` python
-    print("Hello from Python!")
-    ```
+nShield Security World v13.9.3 Management Guide
 
-=== "Rust"
+nShield v13.9.3 Utilities Reference
 
-    ``` rs
-    println!("Hello from Rust!");
-    ```
+nShield Security World v13.9.3 Key Management Guide
 
-## Diagrams
+CodeSafe 5 v13.9.3 Developer Guide
 
-> Go to [documentation](https://zensical.org/docs/authoring/diagrams/)
+CodeSafe v13.9.3 Developer Guide
 
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
+nShield Connect Physical Security Checklist
 
-## Footnotes
+### Reference documents
+Ecrypt-CSA recommendations
 
-> Go to [documentation](https://zensical.org/docs/authoring/footnotes/)
+NIST SP 800-57 Part 1 Revision 5
 
-Here's a sentence with a footnote.[^1]
+NIST SP800-131A Revision 1
 
-Hover it, to see a tooltip.
+Net-SNMP
 
-[^1]: This is the footnote.
-
-
-## Formatting
-
-> Go to [documentation](https://zensical.org/docs/authoring/formatting/)
-
-- ==This was marked (highlight)==
-- ^^This was inserted (underline)^^
-- ~~This was deleted (strikethrough)~~
-- H~2~O
-- A^T^A
-- ++ctrl+alt+del++
-
-## Icons, Emojis
-
-> Go to [documentation](https://zensical.org/docs/authoring/icons-emojis/)
-
-* :sparkles: `:sparkles:`
-* :rocket: `:rocket:`
-* :tada: `:tada:`
-* :memo: `:memo:`
-* :eyes: `:eyes:`
-
-## Maths
-
-> Go to [documentation](https://zensical.org/docs/authoring/math/)
-
-$$
-\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
-$$
-
-!!! warning "Needs configuration"
-    Note that MathJax is included via a `script` tag on this page and is not
-    configured in the generated default configuration to avoid including it
-    in a pages that do not need it. See the documentation for details on how
-    to configure it on all your pages if they are more Maths-heavy than these
-    simple starter pages.
-
-<script id="MathJax-script" src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [["\\(", "\\)"]],
-      displayMath: [["\\[", "\\]"]],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      ignoreHtmlClass: ".*|",
-      processHtmlClass: "arithmatex"
-    }
-  };
-
-  document$.subscribe(() => {
-    MathJax.startup.output.clearCache()
-    MathJax.typesetClear()
-    MathJax.texReset()
-    MathJax.typesetPromise()
-  })
-</script>
-
-## Task Lists
-
-> Go to [documentation](https://zensical.org/docs/authoring/lists/#using-task-lists)
-
-* [x] Install Zensical
-* [x] Configure `zensical.toml`
-* [x] Write amazing documentation
-* [ ] Deploy anywhere
-
-## Tooltips
-
-> Go to [documentation](https://zensical.org/docs/authoring/tooltips/)
-
-[Hover me][example]
-
-  [example]: https://example.com "I'm a tooltip!"
+NTP Vulnerabilities.
