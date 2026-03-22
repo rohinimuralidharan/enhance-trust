@@ -9,8 +9,8 @@ Upon receipt of the nShield HSM, it must be inspected for signs of tamper:
 
     IMAGE
 
-    !!! note 
-
+      !!! note 
+    
       The nShield Edge Developer Edition does not have a hologram and tamper window.
 
 - nShield Solo: Examine the epoxy resin security coating (after removing the metal lid on nShield Solo XC) of the module for obvious signs of damage.

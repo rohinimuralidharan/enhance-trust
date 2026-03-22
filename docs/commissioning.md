@@ -35,7 +35,7 @@ The integrity of the software CDs have SHA256 checksums applied to them. If you 
 ### Trusted Verification Device
 For use with the Remote Administration Client, Entrust supplies and strongly recommends the use of the nShield Trusted Verification Device (TVD). This specialized smart card reader allows the card holder to securely confirm the Electronic Serial Number (ESN) of the HSM to which they want to connect, using the TVD display.
 
-!!! important
+!!! important "**Important**"
 
     Only use a TVD that has been obtained via a trusted supply chain.
 
@@ -94,7 +94,7 @@ Set the nShield Connect date and time using an accurate trusted local time sourc
 
 The nShield Connect supports a Network Time Protocol (NTP) client which if activated will synchronize the nShield Connect time to an NTP enabled time source.
 
-!!! important
+!!! important "**Important**"
 
     NTP has featured many security vulnerabilities: https://www.cvedetails.com/vulnerability-list/vendor id-2153/NTP.html. The activation of NTP within the nShield Connect can increase the threats the nShield Connect is exposed to. Due to the nature of NTP design not all threats can be mitigated. NTP should only be used if your risk analysis identifies suitable controls to mitigate the impact of its operation. This could include:
 
