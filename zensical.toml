@@ -26,6 +26,7 @@ nav = [
 
 [project.theme]
 language = "en"
+font     = { text = "Roboto", code = "Roboto Mono" }
 palette  = [{ primary = "deep-purple", accent = "deep-purple" }]
 features = [
   "navigation.indexes",
