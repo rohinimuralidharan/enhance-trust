@@ -1,11 +1,8 @@
 [project]
-site_name = "Enhancement"
-site_description = "Documentation Enhancement project."
+site_name = "nShield Security World v13.9.3"
+site_description = "Security Manual"
 site_author = "Content Curator"
 copyright = "2026"
-
-[project.theme]
-language = "en"
 
 nav = [
   { "nShield Security World v13.9.3 Security Manual" = [
@@ -23,4 +20,11 @@ nav = [
     { "Decommission and Disposal"      = "decommission-and-disposal.md" },
     { "Abbreviations"                  = "abbreviations.md" }
   ]}
+]
+
+[project.theme]
+language = "en"
+features = [
+  "navigation.indexes",
+  "navigation.expand"
 ]
