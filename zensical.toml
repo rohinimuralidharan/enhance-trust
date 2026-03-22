@@ -8,18 +8,19 @@ copyright = "2026"
 language = "en"
 
 nav = [
-  { "nShield Security World v13.9.3 Security Manual" = "index.md" [
-    { "Supply and Transportation"    = "supply-and-transportation.md" },
-    { "Environment"                  = "environment.md" },
-    { "Commissioning"                = "commissioning.md" },
-    { "Access Control"               = "access-control.md" },
-    { "Operation"                    = "operation.md" },
-    { "Key Management"               = "key-management.md" },
-    { "Physical Security"            = "physical-security.md" },
-    { "Audit"                        = "audit.md" },
-    { "Support and Maintenance"      = "support-and-maintenance.md" },
+  { "nShield Security World v13.9.3 Security Manual" = [
+    "index.md",
+    { "Supply and Transportation"      = "supply-and-transportation.md" },
+    { "Environment"                    = "environment.md" },
+    { "Commissioning"                  = "commissioning.md" },
+    { "Access Control"                 = "access-control.md" },
+    { "Operation"                      = "operation.md" },
+    { "Key Management"                 = "key-management.md" },
+    { "Physical Security"              = "physical-security.md" },
+    { "Audit"                          = "audit.md" },
+    { "Support and Maintenance"        = "support-and-maintenance.md" },
     { "Security Incident and Response" = "security-incident-and-response.md" },
-    { "Decommission and Disposal"    = "decommission-and-disposal.md" },
-    { "Abbreviations"                = "abbreviations.md" }
+    { "Decommission and Disposal"      = "decommission-and-disposal.md" },
+    { "Abbreviations"                  = "abbreviations.md" }
   ]}
 ]
