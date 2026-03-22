@@ -8,8 +8,7 @@ copyright = "2026"
 language = "en"
 
 nav = [
-  { "nShield Security World v13.9.3 Security Manual" = [
-    "index.md",
+  { "nShield Security World v13.9.3 Security Manual" = "index.md" [
     { "Supply and Transportation"    = "supply-and-transportation.md" },
     { "Environment"                  = "environment.md" },
     { "Commissioning"                = "commissioning.md" },
